@@ -1,0 +1,134 @@
+h1{
+    color: chocolate;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(53, 52, 52);
+    text-align: center;
+}
+.container{
+    padding-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.noone{
+    color: crimson;
+    text-decoration:underline;
+    text-align: center;
+}
+p
+{
+    font-size: large;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.display{
+    background-color:rgb(185, 239, 239);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.box{
+    display: flex;
+    background-color:rgb(206, 243, 243);
+    padding: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 5%;
+    text-align: center;
+    
+    
+}
+
+.box div {
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    padding-left: 2%;
+    padding-right: 2%;
+   text-align:center;
+    margin-top: 50px;
+}
+
+button{
+    color:crimson ;
+    border-color: black;
+    background-color:rgb(213, 211, 211);
+    font-weight: 400;
+    size-adjust: 50%;
+}
+
+.fa {
+    padding: 0px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 10px;
+    margin-right: 70px;
+    margin-left: 55px;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    padding: 10px;
+    margin-right: 70px;
+  }
+
+  .fa-instagram {
+    background: #ee24a4;
+    color: white;
+    padding: 10px;
+  }
+
+  .footer{
+    color: chocolate;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(53, 52, 52);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.bcontainer{
+    padding-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icons{
+  padding-left: 35%;
+  padding-right: 35%;  
+}
+
+#sibtn1{
+  display: none;
+  
+}
+
+#sibtn2{
+  display: none;
+  margin-left: 50%;
+  padding-left: 50%;
+  
+}
+
+.boxsignup{
+    
+    text-align: center;
+  
+}
+h3{
+  color: crimson;
+}
+

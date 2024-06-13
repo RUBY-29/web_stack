@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="web.css">
+
+<body>
+    <div class="container">
+        <h1>Unicorn company</h1>
+    </div>
+    
+    <form class="display">
+
+    <div class="box" id="boxs">
+
+    <div id="intro" >
+        <h3 class="noone" >ABOUT US</h3>
+        <p class="uniq" ><b>In business, a unicorn is a startup company valued <br>
+                            at over US$1 billion which is privately owned and <br>not 
+                            listed on a share market. The term was first <br>published 
+                            in 2013,coined by venture capitalist Aileen Lee</b></p>
+        
+    </div>
+
+    
+
+    <div >
+        <center><p><b> Existing button given below</b></p>
+        <button type="button" id="btn1" onclick="document.getElementById('boxs').innerHTML=document.getElementById('sibtn1').innerHTML" id="signin">Sign in</button></center>
+    </div>
+
+
+    <div >
+        <center> <p><b>New user given below</b></p>
+        <button type="button" onclick="document.getElementById('boxs').innerHTML=document.getElementById('sibtn2').innerHTML" id="signup" >Sign up</button></center>
+    </div>
+
+    </div>
+    </form>
+    
+       <div class="sibtn1" id="sibtn1">
+            <form id="registrationForm" .style.display="block">
+                <div class="boxsignin">
+                    <img src="unicorn2.jpg" width="775" height="400">
+                    <h3>yes!come in</h3>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                
+    
+                <button type="submit" onsubmit="return validateForm()">Register</button>
+                <button type="cancel" onclick="btnCancel_click()">cancel</button>
+    </div>
+            </form>
+        </div>
+
+        <div class="sibtn2" id="sibtn2">
+            <form id="registrationForm".style.display="block">
+
+                <div class="boxsignup">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp92OU0i01C4kPGfBFUhYLx4oRyd3wOy2kGg&usqp=CAU" width="775" height="400">
+                    <h3>welcome</h3>
+                <label for="f_name".style.allign>firstname:</label>
+                <input type="text" id="f_name" name="f_name" required><br><br>
+                
+                <label for="l_name">lastname:</label>
+                <input type="text" id="l_name" name="l_name" required><br><br>
+                
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+                
+                 <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+            
+                    <button type="submit" onsubmit="return validateForm1()">submit</button>
+                    <button type="cancel" onclick="btnCancel_click()">cancel</button>
+                </div>
+            </form>
+        </div>
+    
+        <script>
+            
+            function validateForm() {
+               
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+    
+                document.getElementById('usernameError').textContent = '';
+                document.getElementById('passwordError').textContent = '';
+    
+            
+                var isValid = true;
+    
+                if (username === '') {
+                    document.getElementById('usernameError').textContent = 'Username is required';
+                    isValid = false;
+                }
+
+    
+                if (password === '') {
+                    document.getElementById('passwordError').textContent = 'Password is required';
+                    isValid = false;
+                } else if (password.length < 8) {
+                    document.getElementById('passwordError').textContent = 'Password must be at least 8 characters long';
+                    isValid = false;
+                }
+    
+                return isValid;
+            }
+    
+
+            function validateForm1()
+            {
+                var f_name = document.getElementById('f_name').value;
+                var l_name = document.getElementById('l_name').value;
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+
+                document.getElementById('firstnameError').textContent = '';
+                document.getElementById('lastnameError').textContent = '';
+                document.getElementById('usernameError').textContent = '';
+                document.getElementById('passwordError').textContent = '';
+
+
+                var isValid = true;
+    
+                if (f_name === '') {
+                    document.getElementById('firstnameError').textContent = 'firstname is required';
+                    isValid = false;
+                }
+                if (l_name === '') {
+                    document.getElementById('lastnameError').textContent = 'lastname is required';
+                    isValid = false;
+                }
+                if (username === '') {
+                    document.getElementById('usernameError').textContent = 'Username is required';
+                    isValid = false;
+                }
+                if (password === '') {
+                    document.getElementById('passwordError').textContent = 'Password is required';
+                    isValid = false;
+                } else if (password.length < 8) {
+                    document.getElementById('passwordError').textContent = 'Password must be at least 8 characters long';
+                    isValid = false;
+                }
+    
+                return isValid;
+
+            }
+        </script>
+
+<div class="icons">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="https://www.linkedin.com/in/ruby-murugesan-523114234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/fire_phoenix_29?igsh=MW1ndG96NTY5d2dlNw==" class="fa fa-instagram"></a>
+    </div>
+
+    
+    </form>  
+
+    <div class="bcontainer">
+        <h3 class="footer">all rights reserved copyrights @  2025</h3>
+    </div>
+</body>
+</html>
