@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio About me</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+   <header>
+    <div class="head">
+        <h1 >PORTFOLIO ABOUT ME</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="home">
+    <h2>It's me</h2>
+    <h3>welcome to my page </h3>
+    <p>I'm very happy to meet you</p>
+</section>
+
+<section id="about">
+    <h2>About</h2> 
+    <h3>I'm {Ruby} MCA graduate</h3>
+    <p>I'm from Tiruppur .The cloth city and I'm belongs to a Nuclear family</p>
+</section>
+
+<section id="Projects">
+   
+    <h2>Projects</h2>
+
+    <h4>project 1</h4>
+    <ul id="project">
+        <li>
+          <p>Most basic todolist is my first experience</p>
+        </li>
+        <li>
+            <p>This was done by my own practice with the help of udemy course</p>
+        </li>
+        <li>
+            <p>While I was done this project by my own facing lots of unstackles.But problem solving my own is most intersting task here for me</p>
+        </li>
+    </ul>
+
+    <h4>project 2</h4>
+    <ul id="project" >
+        <li>
+    <p>Title name:authorization of content sharing in social media</p>
+</li>
+<li>
+    <p>It was in mini project in academics</p>
+</li>
+<li>
+    <p>Most challenging project from my side facing lots of unstuckles in connecting API.Here is my backend was Php and Mysql</p>
+</li>
+</ul>
+
+<h4>project 3</h4>
+    <ul id="project">
+        <li>
+    <p>refer major project using language:html,css,js</p>
+</li>
+</ul>
+
+</section>
+
+<section id="contact">
+    <h2>contact me</h2>
+    <form id="form">
+        <div id="input">
+        <label>Name:</label>
+        <input type="text" id="text" placeholder="type your name" required>
+        </div>
+        <div id="input">
+        <label>email:</label>
+        <input type="text" id="text" placeholder="type your email" required>
+        </div>
+        <div id="input">
+        <label>message:</label>
+        <input type="text" id="text" placeholder="type your message" required>
+       </div>
+       <div><button onclick="okkkay()">submit </button></div>
+       <div id="conformmsg" style="display: none;">thanks for your response</div>
+    </form>
+</section>
+
+
+<script>
+function okkkay(){
+   document.getElementById("form").addEventListener('submit',function(e){e.preventDefault})
+   document.getElementById("conformmsg").style.display ='block';
+   document.getElementById("form").reset();
+    }
+</script>
+
+</body>
+</html>
