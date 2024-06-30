@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <h1>Counter</h1>
+    <p id="para" style="display: none">0</p>
+    <button id="button1">Add Count</button>
+    <button id="button2">Lower Count</button>
+</div>
+<script>
+    document.getElementById('para').style.display="block"
+
+    function numberCounter()
+    {
+        if(Number(document.getElementById('para').innerText)>0)
+        {
+            document.getElementById('para').style.color = "blue"
+        }
+        else if(Number(document.getElementById('para').innerText)<0)
+        {
+            document.getElementById('para').style.color = "red"
+        }
+        else if(Number(document.getElementById('para').innerText)==0)
+        {
+            document.getElementById('para').style.color = "white"
+        }
+    }
+    document.getElementById('button1').addEventListener("click",function(){
+        document.getElementById('para').innerText = Number(document.getElementById('para').innerText)+Number(1)
+        numberCounter()
+
+    })
+        document.getElementById('button2').addEventListener("click",function(){
+        document.getElementById('para').innerText = Number(document.getElementById('para').innerText)-Number(1)
+        numberCounter()
+
+    })
+
+</script>
+</body>
+</html>
