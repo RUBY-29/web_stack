@@ -4,6 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         body {
+            background: url('https://image.freepik.com/free-vector/wood-background-realistic_107791-102.jpg?1');
+        }
+        div{
+            z-index: 1;
+           width: 600px; 
+           height: 500px;
+           margin-left: -300px;
+           position: relative;
+           left:50%;
+           top: 50px;
+           text-align: center;
+           color:white;
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           font-size: 50px;
+           box-shadow: 7px 7px 5px black;
+           background: url('https://image.freepik.com/free-vector/wood-background-realistic_107791-102.jpg?1');
+        }
+        p{
+            font-size: 70px;
+            position: sticky;
+            /* color: greenyellow; */
+            font-weight: 1000;
+        }
+        #button2{
+            display: block;
+            color: white;
+            background-color: cornflowerblue;
+            width: 150px;
+            height: 30px;
+            margin-left: -80px;
+            position: relative;
+            top: 50px;
+            left: 50%;
+            /* padding: 10px; */
+            border-radius: 7px;
+            box-shadow: 7px 7px 7px black;
+        }
+        #button1{
+            display: block;
+            color: white;
+            background-color: cornflowerblue;
+            width: 150px;
+            height: 30px;
+            margin-left: -80px;
+            position: relative;
+            top: 30px;
+            left: 50%;
+            /* padding: 10px; */
+            border-radius: 7px;
+            box-shadow: 7px 7px 7px black;
+        }
+        h1{
+            position: relative;
+
+
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -19,7 +78,7 @@
     {
         if(Number(document.getElementById('para').innerText)>0)
         {
-            document.getElementById('para').style.color = "blue"
+            document.getElementById('para').style.color = "green"
         }
         else if(Number(document.getElementById('para').innerText)<0)
         {
@@ -27,7 +86,7 @@
         }
         else if(Number(document.getElementById('para').innerText)==0)
         {
-            document.getElementById('para').style.color = "white"
+            document.getElementById('para').style.color = "black"
         }
     }
     document.getElementById('button1').addEventListener("click",function(){
