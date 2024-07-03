@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYCALCS</title>
+</head>
+<body>
+    <style>
+        
+        table{
+            border-color: black;
+            border: 1px solid black;
+        }
+        tr{
+            border-color: black;
+            border: 1px solid black;
+            background-color: black;
+            color: white;   
+        }
+        td{
+            border-color: black;
+            border: 1px solid black;
+            padding: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+           
+        }
+        #output{
+            border: 2px solid black;
+            background-color: lightgray;
+            color: black;
+            padding: 15px;
+            width: 270px;
+            border-radius: 10px;
+            height: 10px;
+        }
+        #result{
+            border: 2px solid black;
+            color: green;
+            padding: 15px;
+            width:270px;
+            border-radius: 10px;
+            height: 10px;
+        }
+        body{
+           display: grid;
+           place-items: center;
+        }
+    </style>
+    <h2 >calculator</h2>
+    <div id="output"></div>
+    <div id="result"></div>
+    <table>
+        <tr>
+            <td id="7">7</td>
+            <td id="8">8</td>
+            <td id="9">9</td>
+            <td id="/">/</td>
+            <td id="=" rowspan="4">=</td>
+        </tr>
+        <tr>
+            <td id="4">4</td>
+            <td id="5">5</td>
+            <td id="6">6</td>
+            <td id="*">*</td>
+        </tr>
+        <tr>
+            <td id="1">1</td>
+            <td id="2">2</td>
+            <td id="3">3</td>
+            <td id="-">-</td>
+        </tr>
+        <tr>
+            <td id="0">0</td>
+            <td id="c">c</td>
+            <td id="ac">ac</td>
+            <td id="+">+</td>
+        </tr>
+    </table>
+    <script>
+const output =document.getElementById("output")
+const result =document.getElementById("result")
+const zero =document.getElementById("0")
+const one =document.getElementById("1")
+const two =document.getElementById("2")
+const three =document.getElementById("3")
+const four =document.getElementById("4")
+const five =document.getElementById("5")
+const six =document.getElementById("6")
+const seven =document.getElementById("7")
+const eight =document.getElementById("8")
+const nine =document.getElementById("9")
+const plus =document.getElementById("+")
+const minus =document.getElementById("-")
+const multiply =document.getElementById("*")
+const divide =document.getElementById("/")
+const c =document.getElementById("c")
+const Ac =document.getElementById("ac")
+const equals =document.getElementById("=")
+
+zero.addEventListener("click",function(){
+    output.innerText =  output.innerText+"0"
+})
+one.addEventListener("click",function(){
+    output.innerText =  output.innerText+"1"
+})
+two.addEventListener("click",function(){
+    output.innerText =  output.innerText+"2"
+})
+three.addEventListener("click",function(){
+    output.innerText =  output.innerText+"3"
+})
+four.addEventListener("click",function(){
+    output.innerText =  output.innerText+"4"
+})
+five.addEventListener("click",function(){
+    output.innerText =  output.innerText+"5"
+})
+six.addEventListener("click",function(){
+    output.innerText =  output.innerText+"6"
+})
+seven.addEventListener("click",function(){
+    output.innerText =  output.innerText+"7"
+})
+eight.addEventListener("click",function(){
+    output.innerText =  output.innerText+"8"
+})
+nine.addEventListener("click",function(){
+    output.innerText =  output.innerText+"9"
+})
+plus.addEventListener("click",function(){
+    output.innerText =  output.innerText+"+"
+})
+minus.addEventListener("click",function(){
+    output.innerText =  output.innerText+"-"
+})
+multiply.addEventListener("click",function(){
+    output.innerText =  output.innerText+"*"
+})
+divide.addEventListener("click",function(){
+    output.innerText =  output.innerText+"/"
+})
+c.addEventListener("click",function(){
+    output.innerText = ""
+    result.innerText = ""
+})
+equals.addEventListener("click",function()
+{
+    result.innerText=eval(output.innerText).toFixed(3)
+})
+ac.addEventListener("click",function(){
+    result.innerText=output.innerText(0,-1)
+})
+
+
+
+
+    </script>
+</body>
+</html>
