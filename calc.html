@@ -150,7 +150,7 @@ equals.addEventListener("click",function()
     result.innerText=eval(output.innerText).toFixed(3)
 })
 ac.addEventListener("click",function(){
-    result.innerText=output.innerText(0,-1)
+    output.innerText=output.innerText.slice(0,-1)
 })
 
 
